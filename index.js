@@ -52,6 +52,7 @@ export default class Pdf extends Component {
         showsHorizontalScrollIndicator: PropTypes.bool,
         showsVerticalScrollIndicator: PropTypes.bool,
         scrollEnabled: PropTypes.bool,
+        enableDarkMode: PropTypes.bool,
         enablePaging: PropTypes.bool,
         enableRTL: PropTypes.bool,
         fitPolicy: PropTypes.number,
