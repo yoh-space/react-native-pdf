@@ -153,6 +153,9 @@ public class PdfManager extends SimpleViewManager<PdfView> implements RNPDFPdfVi
     public void setSinglePage(PdfView pdfView, boolean singlePage) {
         pdfView.setSinglePage(singlePage);
     }
+	@ReactProp(name = "enableDarkMode")
+	public void setEnableDarkMode(PdfView view, boolean enableDarkMode) {
+    view.setDarkMode(enableDarkMode); // You must add this setter in PdfView.java
 
     // It seems funny, but this method is called through delegate on Paper, but on Fabric we need to
     // use `receiveCommand` method and call this one there
@@ -176,5 +179,6 @@ public class PdfManager extends SimpleViewManager<PdfView> implements RNPDFPdfVi
         super.onAfterUpdateTransaction(pdfView);
         pdfView.drawPdf();
     }
+}
 
 }
