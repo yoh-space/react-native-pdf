@@ -89,6 +89,9 @@ public class PdfView extends PDFView implements OnPageChangeListener,OnLoadCompl
     private int oldW = 0;
     private int oldH = 0;
 
+    //dark theme prop
+    private boolean isDarkMode = false; // Default
+
     public PdfView(Context context, AttributeSet set){
         super(context, set);
     }
